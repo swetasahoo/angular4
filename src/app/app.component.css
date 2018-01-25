@@ -1,0 +1,45 @@
+  /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+  .row.content {height: 1200px}
+  
+  /* Set gray background color and 100% height */
+  
+
+  .sidenav {
+    height: 80%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 50;
+    left: 0;
+    background-color:grey;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding-top: 15px;
+	  bottom: 0;
+}
+  h1{
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 110px;  
+    background:grey; /* For browsers that do not support gradients */
+    background: linear-gradient(grey,burlywood);
+    vertical-align: middle;
+  }
+ 
+
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+
+ /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height: auto;} 
+  }

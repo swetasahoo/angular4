@@ -1,0 +1,10 @@
+.mat-dialog-content
+{    position: absolute;    left: 380px;  
+      top: 100px;   width: 50%; height: 40%;
+          border: 3px solid rgb(173, 33, 75); 
+          background: burlywood;
+         }
+
+      
+
+         

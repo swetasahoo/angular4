@@ -1,0 +1,17 @@
+
+<div>
+
+  <ul class="messages">
+    <li *ngFor="let message of commonMessage?.inbox">    
+  <b>{{message.senderEmailId}}</b> {{message.messageDate | date: 'yyyy-MM-dd hh:mm:ss'}} 
+  <br> <b>{{message.textMessage}}</b> 
+    </li>
+  </ul>
+  </div>
+  
+  
+  <div class="form-group">
+    <textarea class="form-control" rows="1" [ngModel]='enteredMessage'
+     (keydown)="sendMessage($event)" placeholder="type message" required></textarea>
+  </div>
+  

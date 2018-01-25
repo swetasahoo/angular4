@@ -1,0 +1,13 @@
+.mat-dialog-content
+{    position: absolute;    left: 380px;  
+      top: 100px;   width: 50%; height:80%;
+          border: 3px solid rgb(173, 33, 75); 
+          background: burlywood;
+         }
+
+
+         .mat-list-icon {
+            color: rgba(0, 0, 0, 0.54);
+          }
+
+      

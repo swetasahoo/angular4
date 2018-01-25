@@ -1,0 +1,34 @@
+<div class="mat-dialog">
+
+  <div mat-dialog-content>
+
+     
+      <mat-list>
+        <h3 mat-subheader>Subscribe User</h3>
+        <mat-list-item *ngFor="let folder of folders">
+         
+          <h4 mat-line>{{folder.name}}  </h4> <a href="">Delete</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <h3 mat-subheader>Add New User</h3>
+        <mat-list-item *ngFor="let note of notes">
+
+          <h4 mat-line>{{note.name}}</h4>
+          <p mat-line> {{note.updated | date}} </p>
+        </mat-list-item>
+      </mat-list>
+      
+    
+  
+  
+    <div mat-dialog-actions>
+      <button mat-button (click)="onCancelClick()">Cancel</button>
+      <button mat-button  [mat-dialog-close]="data.newCircleName" cdkFocusInitial>Save</button>
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  

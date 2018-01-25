@@ -1,0 +1,19 @@
+
+
+
+<div>
+  <h4>Channels 
+    
+      <span class="glyphicon glyphicon-plus" mat-raised-button (click)="openDialog()"></span>  
+      
+</h4>
+<div class="circles">
+  <li *ngFor="let circle of circles" [class.selected]="circle === selectedCircle" (click)='getCircleMessage(circle.circleName)'>
+    <b>{{circle.circleName}}</b>  
+    <a>
+      <span class="glyphicon glyphicon-edit" style="float: right;" mat-raised-button (click)="openNewDialog()"></span>
+    </a>
+    
+</div>
+
+<br>
